@@ -1,6 +1,14 @@
 # Tweet
 
+> Potência Tech Angular Developer Powered by iFood
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+
+## Technologies
+
+- Typescript
+- Angular
+- Tailwind CSS
 
 ## Development server
 
