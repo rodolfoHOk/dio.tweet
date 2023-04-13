@@ -1,17 +1,14 @@
 <div class="w-[650px] bg-white rounded-lg shadow p-6 mb-8">
 	<div class="flex items-center w-full">
 		<div class="mr-5 w-full flex gap-5">
-			<div
-				class="cursor-pointer font-bold w-12 h-12 bg-gray-300 flex justify-center items-center rounded-full"
-			>
-				RO
-			</div>
+			<app-avatar></app-avatar>
 
 			<div class="flex-1">
 				<textarea
 					[(ngModel)]="tweetMessage"
 					(input)="changeTweet()"
 					[maxlength]="tweetMaxLength"
+					(keyup.enter)="sendTweet()"
 					class="mb-2 bg-gray-200 focus:outline-none focus:bg-gray-100 border border-transparent rounded-lg py-2 px-4 block w-full appearance-none leading-normal resize-none font-light placeholder:text-gray-700"
 					placeholder="What's happening..."
 				></textarea>
