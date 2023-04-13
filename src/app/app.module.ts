@@ -7,20 +7,20 @@ import { HeaderComponent } from './components/header/header.component';
 import { PostComponent } from './components/post/post.component';
 import { TweetComponent } from './components/tweet/tweet.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    PostComponent,
-    TweetComponent,
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		PostComponent,
+		TweetComponent,
+		HomeComponent,
+		FooterComponent,
+	],
+	imports: [BrowserModule, AppRoutingModule, FormsModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
